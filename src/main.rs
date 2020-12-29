@@ -1,4 +1,6 @@
 //extern crate egui_sdl2_gl;
+#![windows_subsystem = "windows"]
+
 extern crate gl;
 
 use std::{fs, io, path::PathBuf, collections::HashMap};

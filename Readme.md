@@ -8,7 +8,7 @@ Chipper is a Chip-8 emulator written in Rust. It emulates all of the instruction
     * [Massung's info on Chip-8](https://github.com/massung/chip-8)
 
 
-The emulator is actually a port of the original [C++ emulator](https://github.com/ArjunNair/chip8) I wrote previously, with some noteable differences:
+The emulator is a port of the original [C++ emulator](https://github.com/ArjunNair/chip8) I wrote previously, with some noteable differences:
 
 * It uses [egui](https://github.com/emilk/egui) for the GUI instead of Dear Imgui as in the C++ version.
 * I didn't bother implementing sound in this version because it's a real pain for what is essentially a *very* boring beeper.
