@@ -6,6 +6,7 @@ extern crate gl;
 use std::{fs, io, path::PathBuf, collections::HashMap};
 use sdl2::event::Event;
 use sdl2::keyboard::Keycode::*;
+use sdl2::video::GLProfile;
 use std::time::{Duration, Instant};
 use chip8::Chip8;
 mod chip8;
@@ -78,7 +79,12 @@ pub fn main() {
 
     let sdl_context = sdl2::init().unwrap();
     let video_subsystem = sdl_context.video().unwrap();
+    let gl_attr = video_subsystem.gl_attr();
+    gl_attr.set_context_profile(GLProfile::Core);
 
+    // OpenGL 3.2 is the minimum that we will support.
+    gl_attr.set_context_version(3, 2);
+    
     let window = video_subsystem.window("Chipper - Chip8 Emulator in Rust", WINDOW_WIDTH, WINDOW_HEIGHT)
         .position_centered()
         //.resizable()

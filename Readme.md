@@ -20,6 +20,4 @@ Provided you have the [Rust toolchain](https://www.rust-lang.org/) set up on you
 
  `cargo run --release`
 
-
-# Releases
-If you just want to run the executable, head to the Releases page and download the relevant binaries. I provide the Mac and Windows binaries only at the moment. Linux users, being the hardcore chaps that they are, can build and run the emulator on their favorite distro.
+I do provide a windows binary in the "Release" section for lucky Windows users who don't wish to compile and run from the source code.
