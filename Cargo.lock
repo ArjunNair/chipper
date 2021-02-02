@@ -87,9 +87,9 @@ dependencies = [
 
 [[package]]
 name = "egui_sdl2_gl"
-version = "0.1.5"
+version = "0.1.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d659368333d3e408a76f6ffc94a46ebde087c8b04a10866b25d13470412388f9"
+checksum = "fec818f84a1bfc0b0c605260e5e5ec9c8d9bef50f9bb5228b427d2f076e1b134"
 dependencies = [
  "clipboard",
  "egui",
